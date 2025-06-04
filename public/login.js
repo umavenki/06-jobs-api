@@ -55,13 +55,7 @@ export const handleLogin = () => {
         }
 
         enableInput(true);
-      } else if (e.target === logoff) {
-        setToken(null);
-
-        message.textContent = "You have been logged off.";
-
-        jobsTable.replaceChildren([jobsTableHeader]);
-
+      } else if (e.target === logonCancel) {
         showLoginRegister();
       }
     }
